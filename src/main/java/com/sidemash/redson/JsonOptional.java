@@ -211,10 +211,11 @@ public class JsonOptional implements JsonValue {
     }
 
 
-    @Override
+//  @Override
     public void forEach(Consumer<? super JsonValue> action) {
         value.ifPresent(action);
     }
+
 
     @Override
     public Optional<Long> asLongOptional() {
